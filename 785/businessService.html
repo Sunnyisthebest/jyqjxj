@@ -217,7 +217,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/8.jpg);">
         <div class="container">
-            <h1>政务信息</h1>
+            <h1>入企服务</h1>
         </div>
     </section>
     <!--End Page Title-->
@@ -228,7 +228,7 @@
             <div class="flex-box-five">
                 <ul class="bread-crumb">
                     <li><a href="index.html">首页</a></li>
-                    <li>政务信息</li>
+                    <li>入企服务</li>
                 </ul>
                 <div class="share-link"><a href="#"><i class="fa fa-share-alt"></i>share</a></div>
             </div>
@@ -242,24 +242,47 @@
             <!--菜单-->
                 <div class="left_nav">
                     <div class="head">
-                            <h1>新闻中心<span class="icon"><img src="images/jian1.png" /></span></h1>
+                            <h1>局长信箱<span class="icon"><img src="images/jian1.png" /></span></h1>
                     </div>
                 <div class="con">
                     <ul>
-                    <li><a href="#">通知公告</a></li>
-                    <li><a href="#">工作动态</a></li>
+                    <li><a href="supervise.html">监督投诉</a></li>
+                    <li><a href="question.html">留言咨询</a></li>
+                    <li><a href="answers.html">留言答复</a></li>
                     <div class="clear"></div>
                     </ul>
                 </div>
             </div>
             <!--产品列表-->
             <div class="right_con">
-            <div class="content">
-            <h3>新闻中心</h3>
-            <table class="table table-condensed">
-                <tr><th>标题</th><th>日期</th></tr>
-                <tr><td>新闻1</td><td>2018-2-1</td></tr>
-            </table>
+                <div class="content">
+                    <h3>局长信箱</h3>
+                    <form role="form" action="php/emailProcess.php">
+                        <div class="form-group">
+                            <label for="name">姓名:</label> <input type="text" class="form-control" id="name" placeholder="姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">企业名称:</label><input type="text" class="form-control" id="enterprise" placeholder="企业名称">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">地址:</label><input type="text" class="form-control" id="addr" placeholder="地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">回复联系方式:</label><input type="text" class="form-control" id="contact" placeholder="回复联系方式">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">主题:</label><input type="text" class="form-control" id="subject" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">相关问题</label>
+                            <textarea class="form-control" rows="8" id = "content"></textarea>
+                        </div>
+  
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </form>
+
+  
+
             <div class="clear"></div>
             </div>
             <div class="clear"></div>
@@ -278,10 +301,12 @@
                 <div class="row">
                     <!--footer about one -->
                     <div class="footer-about footer-column-border col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <h3 class="footer-title">xxx</h3>
+                        <h3 class="footer-title">相关网站</h3>
                         <div class="inner">
-                            
-                            <div class="text">xxxx</div>
+                            <a href="http://121.43.68.40/exposure/jiucuo.html?site_code=1401100004&url=http%3A%2F%2Fwww.jinyuan.gov.cn%2Fjyq%2Fjyq%2Findex.action"
+               onclick="window.open('http://121.43.68.40/exposure/jiucuo.html?site_code=1401100004&url=http%3A%2F%2Fwww.jinyuan.gov.cn%2Fjyq%2Fjyq%2Findex.action'); return false"
+               target="_blank">我为政府网站找错</a>
+            
                             <!-- <div class="link"><a href="#" class="thme-btn btn-style-twelve">Read More</a></div> -->
                         </div>
                     </div>
